@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        table {
+            margin-top: 1rem;
+        }
+
+        table tr td,
+        table tr th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 0.25rem;
+        }
+
+        .oculta {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+
+<h1>ACCIONES EN CARTERA</h1>
+
+<form id="cargarAcciones">
+
+    <input type="text" id="nombreDeAccion" autocomplete="off" placeholder="Nombre" />
+    <input type="text" id="precioDeAccion" autocomplete="off" placeholder="Precio" />
+
+    <button type="submit">CARGAR</button>
+
+</form>
+
+<input type="text" id="buscarAccion" style="margin-top: 1rem" />
+
+<table id="listadoAcciones">
+
+    <thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>%/dia</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+
+    <tbody id="bodyTabla">
+
+    </tbody>
+</table>
+
+<script src="main.js"></script>
+
+</body>
+</html>
